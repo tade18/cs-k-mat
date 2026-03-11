@@ -35,6 +35,8 @@ partial class UCList
         addButton = new System.Windows.Forms.Button();
         listBox1 = new System.Windows.Forms.ListBox();
         deleteButton = new System.Windows.Forms.Button();
+        label1 = new System.Windows.Forms.Label();
+        incrementButton = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // textBox1
@@ -75,10 +77,30 @@ partial class UCList
         deleteButton.UseVisualStyleBackColor = false;
         deleteButton.Click += deleteButton_Click;
         // 
+        // label1
+        // 
+        label1.Location = new System.Drawing.Point(15, 132);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(118, 23);
+        label1.TabIndex = 4;
+        label1.Text = "label1";
+        // 
+        // incrementButton
+        // 
+        incrementButton.Location = new System.Drawing.Point(25, 167);
+        incrementButton.Name = "incrementButton";
+        incrementButton.Size = new System.Drawing.Size(80, 45);
+        incrementButton.TabIndex = 5;
+        incrementButton.Text = "Touch me pls";
+        incrementButton.UseVisualStyleBackColor = true;
+        incrementButton.Click += incrementButton_Click;
+        // 
         // UCList
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        Controls.Add(incrementButton);
+        Controls.Add(label1);
         Controls.Add(deleteButton);
         Controls.Add(listBox1);
         Controls.Add(addButton);
@@ -87,6 +109,9 @@ partial class UCList
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Button incrementButton;
 
     private System.Windows.Forms.Button deleteButton;
 

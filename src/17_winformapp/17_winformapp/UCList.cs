@@ -2,6 +2,7 @@
 
 public partial class UCList : UserControl
 {
+    public int i = 0;
     public UCList()
     {
         InitializeComponent();
@@ -26,5 +27,11 @@ public partial class UCList : UserControl
                 {
                     MessageBox.Show("List is empty");
                 }
+    }
+
+    private void incrementButton_Click(object sender, EventArgs e)
+    {
+        i++;
+        label1.Text = i.ToString();
     }
 }
